@@ -35,17 +35,17 @@ def ask_letter(self):
 
 - In the while loop, it would check the condition above using an if statementthat would check if it was a single letter that was in the alphabet. Errors would keep the while loop going, printing *"Please, enter just one character"* before asking for another input. If it was a valid guess, it would print *"You guessed {letter}"*.
 
-> Case 1: No error
-> ```
-> Enter a letter you would like to guess: a
-> You guessed: a
-> ```
+### Figure 1: No error
+```
+Enter a letter you would like to guess: a
+You guessed: a
+```
 
-> Case 2: Error
-> ```
-> Enter a letter you would like to guess: '
-> Please, enter just one character
-> ```
+### Figure 2: Error
+```
+Enter a letter you would like to guess: '
+Please, enter just one character
+```
 
 ## Milestone 3: Define the initialiser 
 
@@ -82,12 +82,12 @@ def ask_letter(self):
     pass
 ```
 
-> Case 1: Error
-> ```
-> Enter a letter you would like to guess: a
-> Enter a letter you would like to guess: A
-> a was already tried
-> ```
+### Figure 3: Error
+```
+Enter a letter you would like to guess: a
+Enter a letter you would like to guess: A
+a was already tried
+```
 
 - The check_letter method uses an if statement to check if the inputted letter was in the chosen word. The lower() function was used to account for higher and lower case letters. 
 
@@ -113,15 +113,15 @@ def check_letter(self, letter) -> None:
     pass
 ```
 
-> Case 1: 2 rounds of hangman (word = banana)
-> ```
-> Enter a letter you would like to guess: a
-> Nice! a is in the word!       
-> ['_', 'a', '_', 'a', '_', 'a']
-> Enter a letter you would like to guess: f
-> Sorry, f is not in the word.
-> You have 4 lives left.
-> ```
+### Figure 4: 2 rounds of hangman (word = banana)
+```
+Enter a letter you would like to guess: a
+Nice! a is in the word!       
+['_', 'a', '_', 'a', '_', 'a']
+Enter a letter you would like to guess: f
+Sorry, f is not in the word.
+You have 4 lives left.
+```
 
 ## Milestone 5: Putting it all togehter
 
@@ -145,75 +145,75 @@ if __name__ == '__main__':
 
 - In order to add realism to the game, a simple text based image was used to replicate a hanged man that would typically be drawn in a normal game of hangman. This method, hang_the_man, used simple if statements to check how many lives the user had and displayed the correct parts of the body accordingly.
 
-> Case 1: Game win
-> ```
-> Enter a letter you would like to guess: g
-> Nice! g is in the word!
-> ['o', 'r', 'a', 'n', 'g', '_']
->   ________
->   |      |
->   |      O
->   |      +
->   |      |
->   |      |
->   |
->   |
-> __|__
-> Enter a letter you would like to guess: e
-> Nice! e is in the word!
-> ['o', 'r', 'a', 'n', 'g', 'e']
->   ________
->   |      |
->   |      O
->   |      +
->   |      |
->   |      |
->   |
->   |
-> __|__
-> Congratulations you won!
-> ```
+### Figure 5: Game win
+```
+Enter a letter you would like to guess: g
+Nice! g is in the word!
+['o', 'r', 'a', 'n', 'g', '_']
+  ________
+  |      |
+  |      O
+  |      +
+  |      |
+  |      |
+  |
+  |
+__|__
+Enter a letter you would like to guess: e
+Nice! e is in the word!
+['o', 'r', 'a', 'n', 'g', 'e']
+  ________
+  |      |
+  |      O
+  |      +
+  |      |
+  |      |
+  |
+  |
+__|__
+Congratulations you won!
+```
 
-> Case 2: Game loss
-> ```
-> Enter a letter you would like to guess: b
-> Sorry, b is not in the word.
-> You have 1 lives left.
->   ________
->   |      |
->   |      O
->   |     -+-
->   |    / | \
->   |      |
->   |     /
->   |    /
-> __|__
-> Enter a letter you would like to guess: r
-> Nice! r is in the word!
-> ['_', 'e', '_', 'r']
->   ________
->   |      |
->   |      O
->   |     -+-
->   |    / | \
->   |      |
->   |     /
->   |    /
-> __|__
-> Enter a letter you would like to guess: m
-> Sorry, m is not in the word.
-> You have 0 lives left.
->   ________
->   |      |
->   |      O
->   |     -+-
->   |    / | \
->   |      |
->   |     / \
->   |    /   \
-> __|__
-> You ran out of lives. The word was pear
-> ```
+### Figure 6: Game loss
+```
+Enter a letter you would like to guess: b
+Sorry, b is not in the word.
+You have 1 lives left.
+  ________
+  |      |
+  |      O
+  |     -+-
+  |    / | \
+  |      |
+  |     /
+  |    /
+__|__
+Enter a letter you would like to guess: r
+Nice! r is in the word!
+['_', 'e', '_', 'r']
+  ________
+  |      |
+  |      O
+  |     -+-
+  |    / | \
+  |      |
+  |     /
+  |    /
+__|__
+Enter a letter you would like to guess: m
+Sorry, m is not in the word.
+You have 0 lives left.
+  ________
+  |      |
+  |      O
+  |     -+-
+  |    / | \
+  |      |
+  |     / \
+  |    /   \
+__|__
+You ran out of lives. The word was pear
+```
 
 ## Conclusion
 
