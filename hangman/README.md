@@ -1,4 +1,5 @@
 # Hangman Project Documentation
+
 > AiCore project documentation for creating a text based replication of the game hangman where the user tries to guess a word, letter by letter, within 5 mistakes. Built using Python, Github, and ran in command line.
 
 ## Milestone 1: Set up the environment
