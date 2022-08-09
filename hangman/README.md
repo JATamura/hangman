@@ -214,4 +214,6 @@ if __name__ == '__main__':
 > You ran out of lives. The word was pear
 > ```
 
+## Conclusion
 
+This was a great introductory project into Python and object oriented programming in general as it allowed for the use of a variety of basic functions while also presenting a good challenge. In the future, a fully functional graphic user interface would make the game more interactive. In addition, having a second player input a word they have thought of would make the game authentic to a real hangman experience. It would also be useful to be able to see what letters the user has guessed in the past. 
