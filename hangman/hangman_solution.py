@@ -9,10 +9,6 @@ class Hangman:
         self.num_letters = len(list(set(self.word)))
         self.num_lives = num_lives
         self.list_letters = []
-        # TODO 2: Initialize the attributes as indicated in the docstring
-        # TODO 2: Print two message upon initialization:
-        # 1. "The mystery word has {len(self.word)} characters" (The number of letters is NOT the UNIQUE number of letters)
-        # 2. {word_guessed}
         pass
 
     def check_letter(self, letter) -> None:
